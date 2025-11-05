@@ -1,0 +1,35 @@
+@use "variables" as *;
+
+body {
+  font-family: $font-alata;
+  font-size: $text-preset-6-size;
+  line-height: $line-height-165;
+  color: $black;
+  font-weight: $font-weight-regular;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-josefin-sans;
+  font-weight: 300;
+  line-height: $line-height-100;
+  color: $black;
+  font-weight: $font-weight-light;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: $text-preset-3-size;
+}
+
+h2 {
+  font-size: $text-preset-4-size;
+}
+
+h3 {
+  font-size: $text-preset-5-size;
+}
