@@ -1,0 +1,17 @@
+@use "../base/variables" as *;
+
+.hero-section {
+    position: relative;
+    height: 650px;
+    background: url("../../images/mobile/image-hero.jpg");
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 24px;
+    margin-bottom: 96px;
+}
+.hero-content {
+    border: 2px solid $white;
+    padding: 24px;
+}
