@@ -1,0 +1,30 @@
+@use "../base/variables" as *;
+
+footer {
+  background-color: $black;
+  margin-top: 96px;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  nav {
+    margin-block: 40px;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+  .socials-links {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+
+    img {
+        width: 24px;
+        height: 24px;
+    }
+  }
+}

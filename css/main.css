@@ -84,15 +84,39 @@ h2 {
 
 h3 {
   font-size: 24px;
+  color: #FFFFFF;
 }
 
 p {
   color: rgba(0, 0, 0, 0.5);
 }
 
+footer p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+button {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-family: "Alata", sans-serif;
+}
+
 button {
   border: none;
   background: none;
+}
+
+.see-all {
+  border: 1px solid #000000;
+  width: 157px;
+  height: 40px;
 }
 
 header {
@@ -154,10 +178,70 @@ main {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin-inline: 24px;
 }
 
 .creations-section {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  align-items: center;
+  padding-inline: 24px;
+}
+
+.creations {
+  width: 100%;
+  margin-block: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.creation {
+  position: relative;
+  overflow: hidden;
+}
+.creation img {
+  width: 100%;
+  display: block;
+}
+.creation::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 100%);
+  opacity: 0.6;
+  z-index: 1;
+}
+.creation .creation-title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
+}
+
+footer {
+  background-color: #000000;
+  margin-top: 96px;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer nav {
+  margin-block: 40px;
+}
+footer nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+footer .socials-links {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+footer .socials-links img {
+  width: 24px;
+  height: 24px;
 }/*# sourceMappingURL=main.css.map */

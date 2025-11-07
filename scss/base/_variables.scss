@@ -2,10 +2,17 @@ $white: #FFFFFF;
 
 $black: #000000;
 $semi-black: rgba(0, 0, 0, 0.5);
-$grey-200: #D8D8D8;
+$semi-black-footer: rgba(255, 255, 255, 0.5);;
 
+$grey-200: #D8D8D8;
 $blue-100: #E5EAF1;
 $blue-50: #F6FAFF;
+$gradient: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+
 
 $font-josefin-sans: 'Josefin Sans', sans-serif;
 $font-alata: 'Alata', sans-serif;

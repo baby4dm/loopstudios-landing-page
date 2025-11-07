@@ -33,8 +33,26 @@ h2 {
 
 h3 {
   font-size: $text-preset-5-size;
+  color: $white;
 }
 
 p {
   color: $semi-black;
+}
+footer {
+  p {
+    color: $semi-black-footer;
+  }
+}
+button {
+  font-size: $text-preset-7-size;
+  font-weight: $font-weight-regular;
+  letter-spacing: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+  font-size: $text-preset-6-size;
+  font-family: $font-alata;
 }
