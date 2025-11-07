@@ -1,0 +1,23 @@
+.leader-section {
+    padding-inline: 24px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+    text-align: center;
+    margin-block: 96px;
+}
+
+.leader-img {
+    min-height: 224px;
+    width: 100%;
+}
+
+.leader-section {
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
