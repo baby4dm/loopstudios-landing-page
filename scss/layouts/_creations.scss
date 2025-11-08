@@ -1,18 +1,19 @@
 @use "../base/variables" as *;
+@use "../utils/mixins" as *;
 
 .creations-section {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-inline: 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 24px;
 }
 .creations {
-    width: 100%;
-    margin-block: 48px 32px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  width: 100%;
+  margin-block: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 .creation {
   position: relative;
@@ -37,5 +38,11 @@
     bottom: 20px;
     left: 20px;
     z-index: 2;
+  }
+}
+
+@include tablet {
+  .creations-section {
+    padding-inline: 80px;
   }
 }

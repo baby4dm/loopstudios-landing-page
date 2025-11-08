@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "../utils/mixins" as *;
 
 body {
   font-family: $font-alata;
@@ -55,4 +56,10 @@ a {
   color: $white;
   font-size: $text-preset-6-size;
   font-family: $font-alata;
+}
+
+@include tablet {
+  h1 {
+    font-size: $text-preset-1-size;
+  }
 }

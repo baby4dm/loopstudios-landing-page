@@ -1,11 +1,23 @@
 @use "../base/variables" as *;
+@use "../utils/mixins" as *;
 
 button {
   border: none;
   background: none;
 }
+.menu-toggle {
+  width: 24px;
+  height: 16px;
+}
 .see-all {
   border: 1px solid $black;
   width: 157px;
   height: 40px;
+}
+
+@include tablet {
+  .menu-toggle {
+    width: 32px;
+    height: 22px;
+  }
 }

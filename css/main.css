@@ -108,9 +108,19 @@ a {
   font-family: "Alata", sans-serif;
 }
 
+@media (min-width: 750px) {
+  h1 {
+    font-size: 72px;
+  }
+}
 button {
   border: none;
   background: none;
+}
+
+.menu-toggle {
+  width: 24px;
+  height: 16px;
 }
 
 .see-all {
@@ -119,12 +129,20 @@ button {
   height: 40px;
 }
 
+@media (min-width: 750px) {
+  .menu-toggle {
+    width: 32px;
+    height: 22px;
+  }
+}
 header {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 100;
-  padding: 40px 24px 0px 24px;
+  padding-top: clamp(2.5rem, 7vw, 5rem);
+  padding-inline: clamp(1.5rem, 7vw, 5rem);
+  padding-bottom: 0;
   height: 24px;
   width: 100%;
   display: flex;
@@ -137,15 +155,27 @@ header {
   height: 24px;
 }
 
+@media (min-width: 750px) {
+  header {
+    padding: 80px 80px 0px 80px;
+  }
+  .logo {
+    width: 192px;
+    height: 32px;
+  }
+}
 .hero-section {
   position: relative;
-  height: 650px;
-  background: url("../../images/mobile/image-hero.jpg");
+  background-image: url("../../images/mobile/image-hero.jpg");
   width: 100%;
+  height: 650px;
   display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   align-items: center;
   justify-content: center;
-  padding-inline: 24px;
+  padding-inline: clamp(1.5rem, 7vw, 5rem);
 }
 
 .hero-content {
@@ -153,6 +183,15 @@ header {
   padding: 24px;
 }
 
+@media (min-width: 750px) {
+  .hero-section {
+    padding-inline: 80px;
+    background-image: url("../../images/desktop/image-hero.jpg");
+  }
+  .hero-content {
+    padding: 40px;
+  }
+}
 main {
   width: 100%;
   overflow: hidden;
@@ -169,7 +208,11 @@ main {
   margin-block: 96px;
 }
 
-.leader-img {
+.leader-img-container {
+  background-image: url("../../images/desktop/image-interactive.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 224px;
   width: 100%;
 }
@@ -181,6 +224,14 @@ main {
   margin-inline: 24px;
 }
 
+@media (min-width: 750px) {
+  .leader-section {
+    padding-inline: 80px;
+  }
+  .leader-img-container {
+    min-height: 284px;
+  }
+}
 .creations-section {
   width: 100%;
   display: flex;
@@ -220,6 +271,11 @@ main {
   z-index: 2;
 }
 
+@media (min-width: 750px) {
+  .creations-section {
+    padding-inline: 80px;
+  }
+}
 footer {
   background-color: #000000;
   margin-top: 96px;
