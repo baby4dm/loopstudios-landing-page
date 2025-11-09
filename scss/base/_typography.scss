@@ -8,6 +8,11 @@ body {
   color: $black;
   font-weight: $font-weight-regular;
 }
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 h1,
 h2,
@@ -61,5 +66,8 @@ a {
 @include tablet {
   h1 {
     font-size: $text-preset-1-size;
+  }
+  h2 {
+    font-size: $text-preset-2-size;
   }
 }

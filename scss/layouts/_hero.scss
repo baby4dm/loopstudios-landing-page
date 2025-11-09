@@ -28,3 +28,12 @@
     padding: 40px;
   }
 }
+@include desktop {
+  .hero-section {
+    padding-inline: 135px;
+    justify-content: start;
+  }
+  .hero-content {
+    max-width: 650px;
+  }
+}

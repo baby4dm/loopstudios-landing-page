@@ -1,10 +1,11 @@
 @use "../utils/mixins" as *;
+@use "../base/variables" as *;
 
 header {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 200;
   padding-top: clamp(2.5rem, 7vw, 5rem);
   padding-inline: clamp(1.5rem, 7vw, 5rem);
   padding-bottom: 0;
@@ -13,6 +14,62 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: $black;
+    z-index: 300;
+    padding: 48px 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s 0.3s;
+
+    &.is-open {
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.3s ease;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        height: 24px;
+        width: 144px;
+      }
+      .close-btn {
+        height: 19px;
+        width: 19px;
+        img {
+          height: 19px;
+          width: 19px;
+        }
+      }
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      li {
+        a {
+          text-transform: uppercase;
+          font-size: $text-preset-5-size;
+          font-weight: $font-weight-light;
+          font-family: $font-josefin-sans;
+        }
+      }
+    }
+  }
 }
 .logo {
   width: 144px;
@@ -21,10 +78,47 @@ header {
 
 @include tablet {
   header {
-    padding: 80px 80px 0px 80px;
+    padding: 64px 80px 0px 80px;
+    .logo {
+      width: 192px;
+      height: 32px;
+    }
+    .mobile-nav {
+      padding-inline: 80px;
+      .header {
+        .logo {
+          height: 32px;
+          width: 192px;
+        }
+        .close-btn {
+          height: 25px;
+          width: 25px;
+          img {
+            height: 25px;
+            width: 25px;
+          }
+        }
+      }
+    }
   }
-  .logo {
-    width: 192px;
-    height: 32px;
+}
+
+@include desktop {
+  header {
+    padding: 64px 135px 0px 135px;
+    .menu-toggle {
+      display: none;
+    }
+    .desktop-nav {
+      display: flex;
+      height: 100%;
+      ul {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        align-items: center;
+      }
+    }
   }
 }

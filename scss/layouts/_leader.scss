@@ -1,4 +1,5 @@
 @use "../utils/mixins" as *;
+@use "../base/variables" as *;
 
 .leader-section {
   padding-inline: 24px;
@@ -12,7 +13,7 @@
 }
 
 .leader-img-container {
-  background-image: url("../../images/desktop/image-interactive.jpg");
+  background-image: url("../../images/mobile/image-interactive.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,5 +36,36 @@
   }
   .leader-img-container {
     min-height: 284px;
+  }
+}
+@include desktop {
+  .leader-section {
+    padding-inline: 80px;
+    margin-block: 135px;
+    flex-direction: row;
+    height: 500px;
+    position: relative;
+    width: 100%;
+    max-width: 1271px;
+
+    .text-content {
+      position: absolute;
+      bottom: 0;
+      right: 80px;
+      z-index: 100;
+      background-color: $white;
+      width: 541px;
+      height: 317px;
+      padding-left: 96px;
+      padding-top: 96px;
+      gap: 24px;
+      align-items: start;
+      text-align: start;
+      margin-inline: 0;
+    }
+  }
+  .leader-img-container {
+    height: 100%;
+    width: 731px;
   }
 }

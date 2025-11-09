@@ -20,7 +20,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <script src="./index.js" defer></script>
     <title>Frontend Mentor | Loopstudios landing page</title>
   </head>
   <body>
@@ -29,6 +29,31 @@
       <button class="menu-toggle" aria-label="Open menu">
         <img src="./images/icon-hamburger.svg" alt="" />
       </button>
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Careers</a></li>
+          <li><a href="/">Events</a></li>
+          <li><a href="/">Products</a></li>
+          <li><a href="/">Support</a></li>
+        </ul>
+      </nav>
+
+      <nav class="mobile-nav">
+        <div class="header">
+          <img class="logo" src="./images/logo.svg" alt="loopstudios" />
+          <button class="close-btn" aria-label="Close menu">
+            <img src="./images/icon-close.svg" alt="" />
+          </button>
+        </div>
+        <ul>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Careers</a></li>
+          <li><a href="/">Events</a></li>
+          <li><a href="/">Products</a></li>
+          <li><a href="/">Support</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section class="hero-section">
@@ -54,45 +79,36 @@
         <h2 class="creations-title">OUR CREATIONS</h2>
         <div class="creations">
           <div class="creation">
-            <img src="./images/mobile/image-deep-earth.jpg" alt="deep-earth" />
-            <h3 class="creation-title">DEEP<br>EARTH</h3>
+            <div class="img-container"></div>
+            <h3 class="creation-title">DEEP<br />EARTH</h3>
           </div>
           <div class="creation">
-            <img
-              src="./images/mobile/image-night-arcade.jpg"
-              alt="night-arcade"
-            />
-            <h3 class="creation-title">NIGHT<br>ARCADE</h3>
+            <div class="img-container"></div>
+            <h3 class="creation-title">NIGHT<br />ARCADE</h3>
           </div>
           <div class="creation">
-            <img
-              src="./images/mobile/image-soccer-team.jpg"
-              alt="soccer-team"
-            />
-            <h3 class="creation-title">SOCCER<br>TEAM VR</h3>
+            <div class="img-container"></div>
+            <h3 class="creation-title">SOCCER<br />TEAM VR</h3>
           </div>
           <div class="creation">
-            <img src="./images/mobile/image-grid.jpg" alt="grid" />
-            <h3 class="creation-title">THE<br>GRID</h3>
+            <div class="img-container"></div>
+            <h3 class="creation-title">THE<br />GRID</h3>
           </div>
           <div class="creation">
-            <img src="./images/mobile/image-from-above.jpg" alt="from-above" />
-            <h3 class="creation-title">FROM UP<br>ABOVE VR</h3>
+            <div class="img-container"></div>
+            <h3 class="creation-title">FROM UP<br />ABOVE VR</h3>
           </div>
           <div class="creation">
-            <img
-              src="./images/mobile/image-pocket-borealis.jpg"
-              alt="pocket-borealis"
-            />
-            <h3 class="creation-title">POCKET<br>BOREALIS</h3>
+            <div class="img-container"></div>
+            <h3 class="creation-title">POCKET<br />BOREALIS</h3>
           </div>
           <div class="creation">
-            <img src="./images/mobile/image-curiosity.jpg" alt="curiosity" />
-            <h3 class="creation-title">THE<br>CURIOSITY</h3>
+            <div class="img-container"></div>
+            <h3 class="creation-title">THE<br />CURIOSITY</h3>
           </div>
           <div class="creation">
-            <img src="./images/mobile/image-fisheye.jpg" alt="fisheye" />
-            <h3 class="creation-title">MAKE IT<br>FISHEYE</h3>
+            <div class="img-container"></div>
+            <h3 class="creation-title">MAKE IT<br />FISHEYE</h3>
           </div>
         </div>
 
@@ -101,43 +117,45 @@
     </main>
 
     <footer>
-      <img class="logo" src="./images/logo.svg" alt="loopstudios" />
-      <nav>
-        <ul>
-          <li><a href="/">About</a></li>
-          <li><a href="/">Careers</a></li>
-          <li><a href="/">Events</a></li>
-          <li><a href="/">Products</a></li>
-          <li><a href="/">Support</a></li>
-        </ul>
-      </nav>
+      <div class="footer-container">
+        <img class="logo" src="./images/logo.svg" alt="loopstudios" />
+        <nav>
+          <ul>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Careers</a></li>
+            <li><a href="/">Events</a></li>
+            <li><a href="/">Products</a></li>
+            <li><a href="/">Support</a></li>
+          </ul>
+        </nav>
 
-      <section class="socials">
-        <ul class="socials-links">
-          <li>
-            <a href="#" aria-label="visit facebook"
-              ><img src="./images/icon-facebook.svg" alt=""
-            /></a>
-          </li>
-          <li>
-            <a href="#" aria-label="visit twitter"
-              ><img src="./images/icon-twitter.svg" alt=""
-            /></a>
-          </li>
-          <li>
-            <a href="#" aria-label="visit pinterest"
-              ><img src="./images/icon-pinterest.svg" alt=""
-            /></a>
-          </li>
-          <li>
-            <a href="#" aria-label="visit instagram"
-              ><img src="./images/icon-instagram.svg" alt=""
-            /></a>
-          </li>
-        </ul>
-      </section>
+        <section class="socials">
+          <ul class="socials-links">
+            <li>
+              <a href="#" aria-label="visit facebook"
+                ><img src="./images/icon-facebook.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#" aria-label="visit twitter"
+                ><img src="./images/icon-twitter.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#" aria-label="visit pinterest"
+                ><img src="./images/icon-pinterest.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#" aria-label="visit instagram"
+                ><img src="./images/icon-instagram.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </section>
 
-      <p class="copyright">© 2021 Loopstudios. All rights reserved.</p>
+        <p class="copyright">© 2021 Loopstudios. All rights reserved.</p>
+      </div>
     </footer>
   </body>
 </html>
