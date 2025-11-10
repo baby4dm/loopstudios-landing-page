@@ -69,6 +69,11 @@
   background-image: url("../images/mobile/image-fisheye.jpg");
 }
 
+.see-all:hover {
+    background-color: $black;
+    color: $white;
+}
+
 @include tablet {
   .creations-section {
     padding-inline: 80px;

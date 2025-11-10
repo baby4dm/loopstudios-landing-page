@@ -17,7 +17,43 @@ header {
 
   .desktop-nav {
     display: none;
+    ul {
+      li {
+        a {
+          position: relative;
+          color: $white;
+          display: inline-block;
+
+          padding-bottom: $spacing-100;
+
+          &::after {
+            content: "";
+            position: absolute;
+
+            bottom: 0;
+            left: 50%;
+
+            width: 50%;
+            height: 3px;
+            background-color: $white;
+
+            transform: translateX(-50%) scaleX(0);
+            transform-origin: center;
+            transition: transform 0.3s ease-in-out;
+          }
+
+          &:hover::after {
+            transform: translateX(-50%) scaleX(1);
+          }
+        }
+
+        &.active a::after {
+          transform: translateX(-50%) scaleX(1);
+        }
+      }
+    }
   }
+
   .mobile-nav {
     position: fixed;
     top: 0;
