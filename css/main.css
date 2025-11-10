@@ -312,7 +312,7 @@ header .mobile-nav ul li a {
     justify-content: start;
   }
   .hero-content {
-    margin-top: 136px;
+    margin-top: 116px;
     max-width: 650px;
   }
 }
@@ -622,7 +622,7 @@ footer {
 }
 @media (min-width: 980px) {
   footer {
-    margin-top: 180px;
+    margin-top: 190px;
   }
   .footer-container {
     max-width: 1110px;
