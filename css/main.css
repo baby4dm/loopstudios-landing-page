@@ -312,7 +312,8 @@ header .mobile-nav ul li a {
     justify-content: start;
   }
   .hero-content {
-    margin-top: 116px;
+    max-height: 650px;
+    margin-top: 96px;
     max-width: 650px;
   }
 }
