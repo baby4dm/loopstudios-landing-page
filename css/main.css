@@ -75,7 +75,7 @@ h6 {
 
 h1 {
   font-size: 40px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 h2 {
@@ -84,7 +84,7 @@ h2 {
 
 h3 {
   font-size: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 p {
@@ -103,7 +103,7 @@ button {
 
 a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 15px;
   font-family: "Alata", sans-serif;
 }
@@ -158,7 +158,7 @@ header .desktop-nav {
 }
 header .desktop-nav ul li a {
   position: relative;
-  color: #FFFFFF;
+  color: #ffffff;
   display: inline-block;
   padding-bottom: 8px;
 }
@@ -169,7 +169,7 @@ header .desktop-nav ul li a::after {
   left: 50%;
   width: 50%;
   height: 3px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   transform: translateX(-50%) scaleX(0);
   transform-origin: center;
   transition: transform 0.3s ease-in-out;
@@ -280,7 +280,7 @@ header .mobile-nav ul li a {
 }
 .hero-section {
   position: relative;
-  background-image: url("../images/mobile/image-hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/mobile/image-hero.jpg");
   width: 100%;
   height: 650px;
   display: flex;
@@ -293,14 +293,14 @@ header .mobile-nav ul li a {
 }
 
 .hero-content {
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
   padding: 24px;
 }
 
 @media (min-width: 768px) {
   .hero-section {
     padding-inline: 80px;
-    background-image: url("../images/desktop/image-hero.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/desktop/image-hero.jpg");
   }
   .hero-content {
     padding: 40px;
@@ -312,7 +312,7 @@ header .mobile-nav ul li a {
     justify-content: start;
   }
   .hero-content {
-    margin-top: 36px;
+    margin-top: 136px;
     max-width: 650px;
   }
 }
@@ -362,7 +362,7 @@ main {
 @media (min-width: 980px) {
   .leader-section {
     padding-inline: 80px;
-    margin-block: 160px 200px;
+    margin-block: 160px 180px;
     flex-direction: row;
     height: 500px;
     position: relative;
@@ -374,7 +374,7 @@ main {
     bottom: 0;
     right: 80px;
     z-index: 100;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     width: 541px;
     height: 317px;
     padding-left: 96px;
@@ -465,7 +465,7 @@ main {
 
 .see-all:hover {
   background-color: #000000;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 @media (min-width: 768px) {
@@ -550,7 +550,7 @@ footer {
 }
 .footer-container nav ul li a {
   position: relative;
-  color: #FFFFFF;
+  color: #ffffff;
   display: inline-block;
   padding-bottom: 8px;
 }
@@ -561,7 +561,7 @@ footer {
   left: 50%;
   width: 50%;
   height: 3px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   transform: translateX(-50%) scaleX(0);
   transform-origin: center;
   transition: transform 0.3s ease-in-out;
