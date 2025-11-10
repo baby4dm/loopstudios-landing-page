@@ -362,7 +362,7 @@ main {
 @media (min-width: 980px) {
   .leader-section {
     padding-inline: 80px;
-    margin-block: 150px;
+    margin-block: 160px 200px;
     flex-direction: row;
     height: 500px;
     position: relative;
@@ -621,6 +621,9 @@ footer {
   }
 }
 @media (min-width: 980px) {
+  footer {
+    margin-top: 180px;
+  }
   .footer-container {
     max-width: 1110px;
     padding-inline: 0;

@@ -114,6 +114,9 @@ footer {
 }
 
 @include desktop {
+  footer {
+    margin-top: 180px;
+  }
   .footer-container {
     max-width: 1110px;
     padding-inline: 0;
